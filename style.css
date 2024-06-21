@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  font-family: Rubik;
+}
+.back {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.profile {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+section {
+  width: 33%;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review,
+.service {
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  display: flex;
+  transition: 0.5s;
+  border-radius: 15px;
+  justify-content: space-between;
+  > img {
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  > img:hover {
+    border-radius: 15px;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.review:hover {
+  transform: translateX(10px);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+}
+.services {
+  display: flex;
+  gap: 10px;
+}
+.service:hover {
+  transform: translateY(10px);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+}
+.photoBefore {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.photoAfter {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.service {
+  position: relative;
+  > .title {
+    position: absolute;
+    bottom: 0%;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
+.photos {
+  display: flex;
+  height: 200px;
+  > .photo {
+    position: relative;
+    > .title {
+      position: absolute;
+      bottom: 0%;
+      background-color: black;
+      color: white;
+      width: 100%;
+      text-align: center;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    > .titleBefore {
+      border-bottom-left-radius: 15px;
+    }
+    > .titleAfter {
+      border-bottom-right-radius: 15px;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+}
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+  border-radius: 15px;
+  padding: 15px;
+}
+nav {
+  display: flex;
+  gap: 10px;
+}
+td,
+table {
+  border: 1px solid whitesmoke;
+  border-collapse: collapse;
+  margin: 0%;
+}
+table{
+  width: 100%;
+  margin-top: 10px;
+}
+td,
+th {
+  padding: 5px;
+}
+thead {
+  > tr {
+    background-color: whitesmoke;
+    color: black;
+  }
+}
+.uploadFile {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
