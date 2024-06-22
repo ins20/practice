@@ -21,7 +21,6 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
 }
 section {
   width: 33%;
@@ -123,13 +122,15 @@ form {
 }
 
 button {
-  background-color: black;
-  color: white;
-  padding: 15px;
+  /* background-color: black; */
+  /* color: white; */
+  padding: 10px;
   border-radius: 15px;
   letter-spacing: 2px;
-  font-weight: 700;
   cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
 }
 input,
 textarea,
@@ -150,7 +151,7 @@ table {
   border-collapse: collapse;
   margin: 0%;
 }
-table{
+table {
   width: 100%;
   margin-top: 10px;
 }

@@ -46,6 +46,16 @@
 
 </body>
 <script>
+  $.ajax({
+    url: 'api/check.php',
+    type: 'GET',
+    success: function (data) {
+      location.pathname = `/${JSON.parse(data).role}.php`
+    },
+    error: function (data) {
+    }
+  })
+
   $('#login').on('submit', function (e) {
     e.preventDefault();
     $.ajax({

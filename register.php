@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <a href="/" class="back">
+  <a href="/" class="back" >
     <svg width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000">
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -46,6 +46,15 @@
 
 </body>
 <script>
+  $.ajax({
+    url: 'api/check.php',
+    type: 'GET',
+    success: function (data) {
+      location.pathname = `/${JSON.parse(data).role}.php`
+    },
+    error: function (data) {
+    }
+  })
   $('#register').on('submit', function (e) {
     e.preventDefault();
     $.ajax({
@@ -53,7 +62,7 @@
       url: 'api/auth.php',
       data: $(this).serialize(),
       success: function (data) {
-        location.pathname =   `/client.php`;
+        location.pathname = `/client.php`;
       }
     });
   })
